@@ -1,0 +1,388 @@
+/* 重置默认样式 */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    /* 设置基本字体样式 */
+    body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    }
+    
+    /* 移除列表默认样式 */
+    ul, ol {
+    list-style: none;
+    }
+    
+    /* 设置链接样式 */
+    a {
+    color: #0066cc;
+    text-decoration: none;
+    }
+    
+    /* 移除输入框默认样式 */
+    input, textarea {
+    border: none;
+    outline: none;
+    }
+    
+    /* 设置按钮样式 */
+    button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    }
+    
+    /* 移除图片边框 */
+    img {
+    border-style: none;
+    }
+    
+    /* 清除浮动 */
+    clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    }
+    li{
+        text-decoration: none;
+    }
+
+.w{
+    width: 1200px;
+    /* 居中 */
+    margin:auto;
+}
+body{
+    background-color: #f4f5f9;
+    height: 9000px;
+}
+.header{
+    height: 42px;
+    /* background-color: pink; */
+    /* 此时是外边距上下三十像素， */
+    margin:30px auto;
+}
+.log{
+    width: 198px;
+    height: 42px;
+    /* background-color: blue; */
+    /* 一个浮动所有的都要浮动 */
+    float:left;
+}
+.nav{
+    /* logo浮动了nav也要浮动 */
+    float:left;
+    margin-left: 60px;
+}
+.nav>ul>li{
+    /* 给li加浮动使得其在一行上 */
+    float: left;
+    margin: 0 15px;
+}
+
+/* 将a转化为块级元素使得其内部的文字将盒子撑开 */
+.nav>ul>li>a{
+    display: block;
+    height: 42;
+    padding: 0 10px;
+    /* 与盒子高度相同可以垂直居中 */
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+.nav>ul>li>a:hover{
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+.search{
+    width: 412px;
+    height: 42px;
+    float:left;
+    margin-left: 50px;
+    /* background-color: skyblue; */
+}
+.search>input{
+    font-size: 14px;
+    color: #bfbfbf;
+    width: 345px;
+    height: 40px;
+    border:1px solid #0066cc;
+    border-right:0;
+    padding-left: 15px;
+    float: left;
+}
+.search button{
+    width: 50px;
+    height: 42px;
+    float: left;
+    background: url(image/btn.png);
+    border: 0;
+    vertical-align: middle;
+}
+.user{
+    float: left;
+    margin-top: 6px;
+}
+.user img{
+    float: left;
+    margin-left:30px;
+    /* text-align: center; */
+}
+.banner{
+    height: 421px;
+    background-color: #1c036b;
+}
+.banner .w{
+    /* width: 1200px; */
+    height: 421px;
+    background: url(../image/banner2.png) no-repeat top center;
+}
+.left {
+    float:left;
+    width: 190px;
+    height: 421px;
+    background-color: rgba(0, 0, 0,0.3);
+    /* margin-left: 360px; */
+}
+.left ul li{
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+.left ul li a{
+    display: block;
+    font-size:20px ;
+    color: #c7c4cd;
+}
+.left ul li a:hover{
+    /* border-bottom: 2px solid blue; */
+    color: blue;
+}
+.right{
+    float: right;
+    width: 232px;
+    height: 305px;
+    background-color: #fff;
+    float:right;
+    margin-top: 52px;
+}
+.right h2{
+    height: 46px;
+    background-color: #9bceeb;
+    font-size: 20px;
+    text-align: center;
+    line-height: 51px;
+    color: #fff;
+}
+.bd{
+    height: 70px;
+    padding: 0 10px;
+}
+.bd ul li{
+    margin: 10px 0;
+    border-bottom: 1px solid #a1a1a1;
+
+}
+.bd ul li p{
+    color: #a1a1a1;
+    margin-bottom:8px ;
+}
+.bd ul li:hover{
+    color: #05a7ef;
+}
+
+.bd .all{
+    float:left ;
+    width: 201px;
+    height: 40px;
+    border:1px solid #05a7ef ;
+}
+.bd .all a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #05a7ef;
+}
+
+.ability{
+    /* float: left; */
+    height: 60px;
+    /* background-color: skyblue; */
+    border: 1px solid #dfdee3;
+    margin-top: 9px;
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, .1);
+
+}
+.ability .se ul li{
+    width: 90px;
+    height: 23px;
+    float:left;
+    margin:20px 20px;
+    border-right: 1px solid #bebebe;
+}
+.ability .se ul li:nth-child(7){
+    border-right: 1px solid #fff;
+}
+.ability .se ul li a{
+    height: 23px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+.fix{
+    width: 60px;
+    height: 20px;
+    /* background-color: pink; */
+    float: right;
+    margin:22px 28px;
+
+}
+.ability .fix ul li a{
+    color: #0066cc;
+    font-size: 15px;
+}
+
+.abilitytitle{
+    /* float: left; */
+    margin-top:35px;
+    height: 27px;
+
+    /* background-color: pink; */
+}
+ .tj{
+    float: left;
+    font-size: 20px;
+}
+.ck{
+    float: right;
+    color: #bebebe;
+    font-size: 14px;
+}
+.object{
+    height: 560px;
+    margin-top: 22px;
+    /* background-color: pink; */
+}
+
+.object .part{
+    width: 232px;
+    height: 272px;
+    /* background-color: skyblue; */
+    float: left;
+    margin-right: 6px;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, .1);
+    
+}
+.object .part:nth-child(n+6){
+    margin-top:12px;
+}
+.object .part h5{
+    margin: 20px 25px 0 25px;
+    font-size: 20px;
+}
+.object .part .bb{
+    margin:6px 25px 0 25px;
+}
+.r{
+    /* float: left; */
+    margin-top:20px ;
+    height: 27px;
+
+}
+.r .grade{
+    float: left;
+    margin-left: 350px;
+}
+.r .grade ul li{
+    float:left;
+    margin-right: 70px;
+}
+.r .grade ul li a{
+    color:#bebebe;
+}
+.tooltag{
+    /* float: left; */
+    height: 400px;
+    margin-top: 15px;
+    /* background-color: skyblue; */
+}
+.tooltag .one{
+    float: left;
+    width: 235px;
+    height: 403px;
+}
+.tooltag .two{
+    float: left;
+    margin-left:2px ;
+}
+.tooltag .three{
+    width: 228px;
+    height: 260px;
+    float: left;
+    margin-top: 16px;
+    margin-left:12px ;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, .1);
+}
+.tooltag .three h5{
+    margin: 10px 15px 0 15px;
+    font-size: 15px;
+}
+.tooltag .three .bb{
+    margin:3px 15px 0 15px;
+}
+.final{
+    /* float: left; */
+    height: 415px;
+    background-color: #fff;
+}
+.main{
+    position: relative;
+    /* float:left ; */
+    height: 415px;
+    /* background-color: skyblue; */
+}
+.final .main .fleft{
+    position: absolute;
+    float: left;
+    padding-top: 35px;
+    padding-left: 15px;
+}
+.final .main .fleft p{
+    padding-top: 20px;
+    font-size: 12px;
+}
+.final .main .fleft .down{
+    margin-top: 20px;
+    width: 100px;
+    height: 15px;
+    padding: 20px;
+    border: 1px solid blue;
+    line-height: 15px;
+    text-align: center;
+}
+.final .main .fright{
+    width: 540px;
+    /* background-color: pink; */
+    float: right;
+    margin-top: 35px;
+}
+.final .main .fright ul{
+    float: left;
+}
+.final .main .fright ul li a{
+    color: black;
+    font-size: 15px;
+}
+.final .main .fright .two{
+    margin: 0 100px;
+}
